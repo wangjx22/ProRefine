@@ -1,0 +1,21 @@
+metadata_version: 1
+name: 'GNNRefine: Fast and effective protein model refinement by deep graph neural networks'
+description: |-
+  GNNRefine is a fast and effective GNN (graph neural networks) based method for protein model refinement with very limited conformation sampling.
+
+  GNNRefine mainly includes three steps: 1) represent the initial
+  model as a graph and extract atom, residue, and geometric features from the initial model, 2) predict the refined distance
+  for each edge in the graph using graph neural network (GNN), and 3) convert the predicted distance probability into distance potential and feed it into PyRosetta FastRelax to produce refined models by side-chain packing and energy minimization.
+tags:
+- protein-structure-prediction
+- protein-structure-refinement
+authors:
+- name: Xiaoyang Jing
+  affiliations:
+  - name: Toyota Technological Institute at Chicago
+- name: Jinbo Xu
+  affiliations:
+  - name: Toyota Technological Institute at Chicago
+corresponding_contributor:
+  name: Jinbo Xu
+  email: jinboxu@gmail.com
